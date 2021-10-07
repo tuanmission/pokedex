@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-sm-12 my-auto py-2">
+                    <img src="img/logo.svg" alt="pokedex logo" class="banner_image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="container">
+        <form action="">
+            <div class="form-group">
+                <label for="">Pokemon Search</label>
+                <input type="text" name="" id="search_query" class="form-control" />
+                <br />
+            </div>
+        </form>
+        <button onclick="getPokemon()" class="btn btn-primary">
+        Search Pokemon
+      </button>
+
+        <h1 class="poke_title" id="poke_title"></h1>
+        <br />
+        <div class="row">
+            <div class="col align-self-center">
+                <img src="img/Pokeball.png" alt="" class="poke_img" id="poke_img" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 align-self-md-start">
+                <h3 id="poke_weight"></h3>
+            </div>
+            <div class="col-md-6 align-self-md-end">
+                <h3 class="poke_height" id="poke_height"></h3>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <h3>Types:</h3>
+        <br />
+        <ul id="poke_type"></ul>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Base</th>
+                        <th scope="col">Stat</th>
+                    </tr>
+                </thead>
+
+                <tbody class="poke_stats" id="poke_stats"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/pokedexscript.js"></script>
+</body>
+
+</html>

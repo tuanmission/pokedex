@@ -1,0 +1,33 @@
+.html {
+    font-size: 62.5%;
+}
+
+.banner {
+    background-color: red;
+    width: 100vw;
+}
+
+.banner_image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poke_title {
+    text-align: center;
+    font-family: 'Daytona', Helvetica, sans-serif
+}
+
+@media screen and (min-width:1024px) {
+    .poke_img {
+        padding-left: 22rem;
+    }
+    .banner_image {
+        padding-left: 9.5rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .poke_height {
+        float: right;
+    }
+}
